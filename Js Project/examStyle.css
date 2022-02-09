@@ -1,0 +1,193 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: tahoma ,arial;
+}
+
+.body{
+    display: flex;
+    margin-top:30px ;
+    height: 400px;
+
+}
+
+.timer-div span{
+    float: right;
+    font-size: 40px;
+    margin-right: 50px;
+    
+}
+
+
+.mark-div{
+    background-color:rgb(189, 222, 189);
+    width: 18%;
+    height: 420px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius:8px ;
+}
+
+.mark-div button{
+    margin: 10px;
+    display: block;
+    border-radius: 4px;
+    background-color:darkslategrey;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    margin: 20px auto;
+    width: 800px;
+    background-color:#8a64;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    height: 400px;
+}
+
+.container .header{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.container .header .h{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.questions-body{
+    background-color: #FFF;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.questions-body p{
+    margin: 0;
+}
+
+.answers-body{
+    background-color: #FFF;
+    padding: 0 10px 10px;
+}
+
+.answers-body .ans {
+    padding: 10px;
+}
+
+.answers-body .ans input[type="Radio"]:checked+label{
+    color: #0075FF;
+}
+
+.answers-body .ans label{
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+}
+
+.buttons{
+    display: flex;
+    margin: 10px;
+}
+
+.next,.prev{
+    border: none;
+    font-size: 14px;
+    background-color: #FFF;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.next:hover,.prev:hover{
+    background-color:darkslategrey;
+    color: white;
+}
+
+.buttons .counter{
+    background-color:#0075FF ;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: white;
+}
+
+.buttons .mark{
+    margin-left: 60px;
+    border: none;
+    font-size: 14px;
+    background-color:darkslategrey;
+    border-radius: 4px;
+    padding: 5px 6px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.submit-btn{
+    width: 100%;
+    border-radius: 6px;
+    background-color: #0075FF;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.submit-btn :focus{
+    outline: none;
+    
+}
+
+.bullets{
+    margin-left: 50px;
+}
+
+.bullets .spans span{
+    background-color: #DDD;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    float: right;
+}
+
+.bullets span.on{
+    background-color: #0075FF;
+}
+
+.results span.bad{
+    color:#dc0a0a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.results {
+    height: 300px;
+    text-align: center;
+    background: #333;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 60px;
+    color: white;
+}
+
+.results span.good{
+    color : #009688;
+    font-weight: bold;
+}
+
+.results span.perfect{
+    color : #0075ff;
+    font-weight: bold;
+    
+}

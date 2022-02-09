@@ -1,0 +1,92 @@
+[
+    {   
+        "number":1,
+        "question":"Which is not permitive Datatype ?",
+        "answer 1":"Char",
+        "answer 2":"arr",
+        "answer 3":"float",
+        "answer 4":"int",
+        "rightAnswer":"arr"
+    },
+    {   
+        "number":2,
+        "question":"C++ is a superset of :",
+        "answer 1":"C",
+        "answer 2":"C#",
+        "answer 3":"JavaScript",
+        "answer 4":"python",
+        "rightAnswer":"C"
+    },
+    {   
+        "number":3,
+        "question":"What is run time polymorphism ?",
+        "answer 1":"It provides fast execution because it is known at the compile time.",
+        "answer 2":"It is achieved by function overloading and operator overloading.",
+        "answer 3":"It can be achieved by virtual functions and pointers.",
+        "answer 4":"none of the above",
+        "rightAnswer":"It can be achieved by virtual functions and pointers."
+    },
+    {   
+        "number":4,
+        "question":"C++ differs compared to C in which of these ?",
+        "answer 1":"C++ is an object-oriented programming language.",
+        "answer 2":"C++ is a procedure-oriented programming language.",
+        "answer 3":"C++ does not support data hiding.",
+        "answer 4":"Function and operator overloading are not supported in C++",
+        "rightAnswer":"C++ is an object-oriented programming language."
+    },
+    {
+        "number":5,
+        "question":"All of choices are the C++ access specifiers except ?",
+        "answer 1":"public",
+        "answer 2":"private",
+        "answer 3":"protected",
+        "answer 4":"semi-public",
+        "rightAnswer":"semi-public"
+    },
+    {
+        "number":6,
+        "question":"what is Shallow Copy ?",
+        "answer 1":"Shallow copy stores the references of objects to the original memory address.",
+        "answer 2":"Shallow copy makes a new and separate copy of an entire object with its unique memory address.",
+        "answer 3":"Shallow copy is comparatively slower.",
+        "answer 4":"Shallow copy does not reflect changes made to the new/copied object in the original object",
+        "rightAnswer":"Shallow copy stores the references of objects to the original memory address."
+    },
+    {
+        "number":7,
+        "question":"Memory used by an array is ?",
+        "answer 1":"Contiguous",
+        "answer 2":"Non-contiguous",
+        "answer 3":"Not determined",
+        "answer 4":"None of the above",
+        "rightAnswer":"Contiguous"
+    },
+    {
+        "number":8,
+        "question":"What is the size of void in C++? ?",
+        "answer 1":"0",
+        "answer 2":"2",
+        "answer 3":"8",
+        "answer 4":"4",
+        "rightAnswer":"0"
+    },
+    {
+        "number":9,
+        "question":"What is an abstract class?",
+        "answer 1":"Class declared with abstract keyword",
+        "answer 2":"Class which has at least one pure virtual function",
+        "answer 3":"Class which has exactly one virtual function",
+        "answer 4":"None of the above",
+        "rightAnswer":"Class which has at least one pure virtual function"
+    },
+    {
+        "number":10,
+        "question":"Which operator can not be overloaded in C++?",
+        "answer 1":"+",
+        "answer 2":"::",
+        "answer 3":"*",
+        "answer 4":"++",
+        "rightAnswer":"::"
+    }
+]

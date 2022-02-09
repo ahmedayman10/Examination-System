@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container1">
+        <div>
+            <h1>Registration Form</h1>
+            <form class="form" onsubmit="validation(event)" name="examForm" action="page2.html">
+                <div class="form-inputs">
+                    <div class="input">
+                    <input type="text" name = "first-name" id="fname" placeholder="First Name" required>
+                    </div>
+
+                    <div class="input">
+                    <input type="text" name = "last-name" id="lname" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="input">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input">
+                    <input type="password" id="pass" placeholder="Password" required>
+                    </div>
+
+                    <div class="input">
+                    <input type="password" id="re-pass" placeholder="Re-entered Password" required>
+                    </div>
+                    
+                    <div class="input">
+                        <input type="submit" id="submit">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
