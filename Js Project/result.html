@@ -8,41 +8,100 @@
     <link rel="stylesheet" href="examStyle.css">
     <title>Results</title>
     <style>
+        /* body{
+            background-color: aliceblue;
+        }
+        .resContainer{
+            padding-top: 100px;
+        }
         .results {
-            height: 300px;
+            height: 250px;
             text-align: center;
             background: #333;
             text-align: center;
             font-size: 25px;
-            width: 80%;
+            width: 60%;
             color: white;
             border-radius: 20px;
             margin: auto;
+            padding-top: 105px;
+        } */
+
+        body {
+            background-image: url('login.jpeg');
+        }
+
+        .resultsContiner {
+            background-color: cadetblue;
+            width: 50%;
+            height: 300px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 5px;
+            margin: auto;
+            margin-top: 100px;
+            opacity: 0.9;
+        }
+
+        .header {
+            margin-bottom: 10px;
+            background-color: white;
+            color: black;
+            padding: 13px;
+            margin-top: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="results">
-        <span></span>
+    <!-- <div class="resContainer">
+        <div class="results">
+            <span></span>
+        </div>
+    </div> -->
+    <div class="resultsContiner">
+
+        <p class="header">C++ Exam</p>
+        <div class="resultBody">
+
+            <p >Student name: <span id="stname" style="padding-left: 15px;"></span></p>
+            <p >examName: <span style="padding-left:25px ;">C++</span></p>
+            <p >score: <span id="score" style="padding-left: 25px;"></span></p>
+            <p >Total: <span style="padding-left: 25px;">10</span></p>
+            <p >grade : <span id="grade" style="padding-left: 25px;"></span></p>
+
+        </div>
     </div>
 
     <script src="script.js"></script>
     <script>
+        let stname = document.getElementById("stname");
+        let score = document.getElementById("score");
+        let grade = document.getElementById("grade")
         let resultsDiv = document.querySelector(".results span");
         if (getCookie("grades") < 5) {
-            resultsDiv.innerHTML = `Sorry <span class="bad" style="font-style: italic"> ${getCookie("fname")} </span> you Failed, you got <span class="bad"> ${getCookie("grades")} </span> from 10`;
+            // resultsDiv.innerHTML = `Sorry <span class="bad" style="font-style: italic"> ${getCookie("fname")} ${getCookie("lname")} </span> you Failed, you got <span class="bad"> ${getCookie("grades")} </span> from 10`;
+            stname.textContent =`${getCookie("fname")} ${getCookie("lname")}`;
+            score.textContent = `${getCookie("grades")}`;
+            grade.textContent = 'C'
         }
         else if (getCookie("grades") > 5 && getCookie("grades") < 10) {
-            resultsDiv.innerHTML = `Good <span class="good" style="font-style: italic"> ${getCookie("fname")} </span> you passed the exam, you got <span class="good"> ${getCookie("grades")} </span> from 10`;
+            stname.textContent =`${getCookie("fname")} ${getCookie("lname")}`;
+            score.textContent = `${getCookie("grades")}`;
+            grade.textContent = 'B'
+           // resultsDiv.innerHTML = `Good <span class="good" style="font-style: italic"> ${getCookie("fname")} ${getCookie("lname")} </span> you passed the exam, you got <span class="good"> ${getCookie("grades")} </span> from 10`;
         }
         else {
-            resultsDiv.innerHTML = `Congrats <span class="perfect" style="font-style: italic"> ${getCookie("fname")} </span> you are perfect, you got <span class="good"> ${getCookie("grades")} </span> from 10`;
+            stname.textContent =`${getCookie("fname")} ${getCookie("lname")}`;
+            score.textContent = `${getCookie("grades")}`;
+            grade.textContent = 'A'
+           // resultsDiv.innerHTML = `congratulations <span class="perfect" style="font-style: italic"> ${getCookie("fname")} ${getCookie("lname")} </span> you are perfect, you got <span class="good"> ${getCookie("grades")} </span> from 10`;
         }
-    </script>
+    </script> -->
 
     <!-- <script src="script.js"></script>
-    <script src="examScript.js"></script> -->
+    <script src="examScript.js"></script>
 </body>
 
 </html>

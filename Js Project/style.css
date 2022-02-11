@@ -1,6 +1,7 @@
 
 body{
     background-color: #8a64;
+    background-image:url('login.jpeg');
 }
 
 .container1{
@@ -10,11 +11,12 @@ body{
     padding: 10px;
     border-radius: 10px;
     height: 430px;
+    opacity: 0.9;
 }
 
 h1{
     text-align: center;
-    color:rgba(0, 0, 0, 0.916);
+    color: brown;
 }
 
 label{
@@ -42,7 +44,7 @@ input:focus {
 
 
 .input #submit{
-    background-color:coral;
+    background-color:brown;
     width: 40%;
     border-radius: 6px;
     margin-left: 50%;
