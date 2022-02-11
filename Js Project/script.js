@@ -45,6 +45,7 @@ function validation(e) {
     }
     setCookie("email",email.value,new Date("2/1/2024"));
     setCookie("pass",pass.value,new Date("2/1/2024"))
+    setCookie("fname",fname.value,new Date("2/1/2024"))
     setCookie("lname",lname.value,new Date("2/1/2024"))
 }
 
