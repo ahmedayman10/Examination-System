@@ -1,38 +1,47 @@
 
+
 let fname = document.getElementById("fname");
 let lname = document.getElementById("lname");
 let email = document.getElementById("email");
 let pass = document.getElementById("pass");
 let Repass = document.getElementById("re-pass");
+let subDiv = document.getElementById("sub");
 let formDiv = document.getElementsByClassName("form-inputs")[0];
 let loginDiv = document.getElementsByClassName("login-inputs")[0];
 let page2From = document.getElementsByClassName("page2From")[0];
 let emailArray = [];
 let passwordArray = [];
-
+console.log(formDiv);
 //page 1 validation
 let span = document.createElement("span");
 function validation(e) {
-    if (isFinite(fname.value) || isFinite(lname.value)) {
+    if (isFinite(fname.value)) {
         e.preventDefault();
         span.style.display = "inline"
         span.style.color = "red"
         span.textContent = "enter string data"
-        formDiv.append(span);
+        formDiv.children[0].append(span);
+    }
+    else if(isFinite(lname.value)){
+        e.preventDefault();
+        span.style.display = "inline"
+        span.style.color = "red"
+        span.textContent = "enter string data"
+        formDiv.children[1].append(span);
     }
     else if (pass.value.length < 8 || Repass.value.length < 8) {
         e.preventDefault();
         span.style.display = "inline"
         span.style.color = "red"
         span.textContent = "password must be at least 8 digits"
-        formDiv.append(span);
+        formDiv.children[4].append(span);
     }
     else if (pass.value !== Repass.value) {
         e.preventDefault();
         span.style.display = "inline"
         span.style.color = "red"
-        span.textContent = "password is not matched"
-        formDiv.append(span);
+        span.textContent = "passwords are not matched"
+        formDiv.children[4].append(span);
     }
     //if email not exists =>push
     else if (emailArray.indexOf(email.value) == -1) {
@@ -98,6 +107,8 @@ function validation2(e) {
         page2From.append(span);
     }
 }
+
+
 
 
 
